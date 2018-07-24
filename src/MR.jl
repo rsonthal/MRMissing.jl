@@ -110,11 +110,12 @@ function procrustes(X, Y)
     return Ya
 end
 
-function Isomap(X,k)
+function Isomap(X,k,d)
     D = pairwise(Euclidean(1e-12),p',p')
     Dmin = Kmin(D,k)
     Dmani = apsp(Dmin)
-    return Dmani
+    Xhat = mds(Dmani,d)
+    return Xhat
 end
 
 function IOMR(Dpert)
@@ -177,9 +178,8 @@ function MR_Missing(X,Q,k)
     Dmiss = distances(X)
     Dfixed = Dmiss + IOMR(Dmiss)
     Dmin = Kmin(Dmin,k)
-    Dmani = apsp(Dmin)
     
-    return Dmani
+    return Dmin
 end
 
 end
