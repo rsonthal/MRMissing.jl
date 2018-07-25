@@ -18,3 +18,4 @@ The exmaples folder has interactive notebooks that steps you through some the ma
 
 `MR_Missing(X,Q,k)` - Returns the adjacency matrix of the graph of the k nearest neighbors. Here X is the data, Q is a 0,1 matrix where a 0 entry represents the fact that the corresponding entry in the X matrix is missing. 
 
+`apsp(A)` - Takes in the adjaceny matrix of graph and return a matrix with the ijth entry is the shorted disjance between points i and j
