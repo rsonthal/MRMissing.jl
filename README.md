@@ -4,7 +4,7 @@ MR is a package that lets you extend standard dimensionality reduction algorithm
 
 The exact details about the algorithm can be found at https://arxiv.org/abs/1807.07610
 
-The exmaples folder has interactive notebooks that steps you through some the major experiments from the paper. While doing so it also provides a useful demo for how to use this package
+The exmaples folder has interactive notebooks that steps you through some the major experiments from the paper. While doing so it also provides a useful demo for how to use this package. If you use this package please cite https://ieeexplore.ieee.org/document/8635955/metrics#metrics
 
 ## Usage:
 
